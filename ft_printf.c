@@ -46,8 +46,6 @@ int	ft_printf(const char *format, ...)
 		{
 			ft_spec(format, &count, ap);
 			format++;
-			if (*format == '#')
-				format++;
 		}
 		else
 			ft_putchar(*format, &count);
